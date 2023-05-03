@@ -3,7 +3,7 @@ provider "aws" {
   access_key=var.AWS_ACCESS_KEY
   secret_key=var.AWS_SECRET_KEY
 }
-resource "aws_instance" "web {
+resource "aws_instance" "web" {
    ami          = "ami-0da62eb5869c785b9"
    instance_type = "t3.micro"
    
@@ -12,7 +12,7 @@ resource "aws_instance" "web {
    }
  }  
    
-resource "aws_instance" "web1 {
+resource "aws_instance" "web1" {
    ami          = "ami-0da62eb5869c785b9"
    instance_type = "t3.micro"
    
